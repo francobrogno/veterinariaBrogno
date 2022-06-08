@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@300;400&display=swap');
+
+/* GENERALES */
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* grid */ 
+
+
+
+/* grid */ 
+
+
+body {
+    background-color: #fefae0;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr auto;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+body h1 {
+    border: solid 1px black;
+    padding: 5px;
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'PT Serif', serif;
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    grid-area: header;
+}
+
+/* 
+#nav-logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */
+
+.navContainer .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    color: white;
+    background-color: #282e16;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navContainer ul {
+    display: flex;
+    color: white;
+}
+
+.navBar li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 500px;
+    font-size: 14px;
+}
+
+
+.navBar li a:hover {
+    color: white;
+    background-color: #283618;
+    transition: background-color .5s;
+    font-size: 20px;
+}
+
+/* .navBar {
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #606c38;
+}
+
+
+
+.navBar li a {
+    font-size: 20px;
+    padding: 8px;
+    background-color: #606c38;
+    color: white;
+}
+
+.navBar li a:hover {
+    background-color: #282e16;
+} */
+
+/* Main Index*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: -apple-system, Raleway, sans-serif;
+    margin-bottom: 8px; 
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.hero p {}
+
+main {
+    grid-area: main;
+}
+
+.centerPage {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerPage button {
+    font-weight: bold;
+    font-size: 12px;
+    width: 250px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: #606c38;
+    margin: 4px;
+
+}
+
+.centerPage button:hover {
+    background-color: #283618;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vacaPanoramica {
+    height: 400px;
+    width: 700px;
+}
+
+.vacaFrente {
+    height: 400px;
+    width: 700px;
+}
+
+.vacaLateral {
+    height: 400px;
+    width: 700px;
+}
+
+/* Main Historia */
+
+.contenedorYoutube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedorYoutube iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorYoutube a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.contenedorYoutube p {
+    line-height: 1.538;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: -apple-system, Raleway, sans-serif;
+    font-style: italic;
+    text-align: justify;
+    padding: 15px 10% 15px 10%;
+}
+
+.contenedorSponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.contenedorSponsors h2 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.contenedorSponsors a {
+    font-weight: bold;
+    font-size: 12px;
+    width: 250px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: #606c38;
+    margin: 4px;
+}
+
+/* Main Contacto */
+
+.contenedorContacto {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: #fefae0;
+}
+
+.form {
+    margin-top: 15px;
+    background-color: #dda15e;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 60%);
+}
+
+.contenedorSubmit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* FOOTER */
+
+
+footer {
+    display: block;
+    background-color: #282e16;
+    height: auto;
+    padding-top: 30px;
+    color: white;
+    grid-area: footer;
+}
+
+footer .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+
+footer .footerContent p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+
+}
+
+footer .footerContent .coder {
+    background-color: black;
+
+}
+
+footer .footerContent .logoVeterinaria{
+    width: 150px;
+    height: 150px;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 1375px) {}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 730px) {}
+
+@media screen and (max-width: 500px) {
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+
+}
